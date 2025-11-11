@@ -1,7 +1,14 @@
 {
   "version": 2,
-  "builds": [{ "src": "api/**/*.js", "use": "@vercel/node" }],
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
-    { "src": "/sitemap.xml", "dest": "/api/sitemap.js" }
+    { "src": "/sitemap.xml", "dest": "/api/sitemap.js" },
+    { "src": "/sitemap-pages.xml", "dest": "/api/sitemap.js" },
+    { "src": "/sitemap-products.xml", "dest": "/api/sitemap.js" }
   ]
 }
