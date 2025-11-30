@@ -7,18 +7,40 @@
     }
   ],
   "routes": [
-    { "src": "/sitemap.xml", "dest": "/api/sitemap.js" },
-    { "src": "/sitemap-pages.xml", "dest": "/api/sitemap.js" },
-    { "src": "/sitemap-products.xml", "dest": "/api/sitemap.js" },
-    { "src": "/sitemap-countries.xml", "dest": "/api/sitemap-countries.js" },
-    { "src": "/sitemap-ads.xml", "dest": "/api/sitemap-ads.js" }
-  ],
-  "headers": [
     {
-      "source": "/sitemap.*\\.xml",
-      "headers": [
-        { "key": "Content-Type", "value": "application/xml" }
-      ]
+      "src": "/sitemap.xml",
+      "dest": "/api/sitemap.js",
+      "headers": {
+        "Content-Type": "application/xml"
+      }
+    },
+    {
+      "src": "/sitemap-pages.xml",
+      "dest": "/api/sitemap.js",
+      "headers": {
+        "Content-Type": "application/xml"
+      }
+    },
+    {
+      "src": "/sitemap-products.xml",
+      "dest": "/api/sitemap.js",
+      "headers": {
+        "Content-Type": "application/xml"
+      }
+    },
+    {
+      "src": "/sitemap-countries.xml",
+      "dest": "/api/sitemap-countries.js",
+      "headers": {
+        "Content-Type": "application/xml"
+      }
+    },
+    {
+      "src": "/sitemap-ads.xml",
+      "dest": "/api/sitemap-ads.js",
+      "headers": {
+        "Content-Type": "application/xml"
+      }
     }
   ]
 }
